@@ -1,0 +1,75 @@
+/* Reset CSS để xóa các khoảng cách mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7fb; /* Màu nền xám nhạt */
+    padding: 20px;
+}
+
+/* Kiểu dáng cho Tiêu đề Header */
+.header-top {
+    background-color: #3b82f6; /* Màu xanh nước biển */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.header-top h1 { font-size: 22px; margin-bottom: 5px; }
+.header-top p { font-size: 14px; opacity: 0.9; }
+
+/* Flexbox để chia layout thành 2 cột */
+.container {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa 2 cột */
+}
+
+/* Hộp màu trắng chứa Form và Bảng */
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Đổ bóng nhẹ cho đẹp */
+}
+
+/* Tỉ lệ chia cột (1 phần cho form, 2 phần cho bảng) */
+.form-box { flex: 1; }
+.table-box { flex: 2; }
+
+.box h2 { font-size: 18px; margin-bottom: 5px; color: #333; }
+.desc { font-size: 13px; color: #666; margin-bottom: 20px; }
+
+/* CSS cho Form nhập liệu */
+.input-group { margin-bottom: 15px; }
+.input-group label {
+    display: block; margin-bottom: 5px; font-weight: bold; font-size: 14px; color: #444;
+}
+.input-group input, .input-group select {
+    width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;
+}
+
+/* CSS cho Nút bấm */
+.btn-group { display: flex; gap: 10px; margin-top: 20px; }
+.btn {
+    padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; width: 50%;
+}
+.btn-add { background-color: #3b82f6; color: white; }
+.btn-reset { background-color: #f3f4f6; color: #333; border: 1px solid #ddd; }
+
+/* CSS cho Bảng dữ liệu */
+table { width: 100%; border-collapse: collapse; }
+th, td {
+    padding: 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px;
+}
+th { color: #555; font-size: 12px; }
+
+/* CSS cho Trạng thái */
+.status {
+    padding: 5px 10px; border-radius: 20px; font-size: 12px; font-weight: bold;
+}
+.status-con { background-color: #d1fae5; color: #065f46; } /* Nền xanh lục */
+.status-het { background-color: #fee2e2; color: #991b1b; } /* Nền đỏ */
